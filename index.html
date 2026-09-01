@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="medicare_design_assets/ChatGPT Image Aug 25, 2026, 07_35_15 PM.png" alt="Logo">
+            </div>
+
+            <ul class="sidebar">
+                <li onclick="hidesidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">Services</a></li>
+                <li><a href="#contact">Doctors</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Testimonials</a></li>
+                <li><a href="#about">Contact</a></li>
+                <li>
+                    <div class="buttons">
+                        <button type="button" class="b1"><i class="fa-solid fa-phone"></i> +201099811245</button>
+                        <button type="button" class="b2">Book Appointment</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu">
+                <ul>
+                    <li class="hideonmobile"><a href="#home">Home</a></li>
+                    <li class="hideonmobile"><a href="#news">Services</a></li>
+                    <li class="hideonmobile"><a href="#contact">Doctors</a></li>
+                    <li class="hideonmobile"><a href="#about">About</a></li>
+                    <li class="hideonmobile"><a href="#about">Testimonials</a></li>
+                    <li class="hideonmobile"><a href="#about">Contact</a></li>
+                    <li class="menubtn" onclick="showsidebar()"><a href="#"><i
+                                class="fa-solid fa-bars-staggered"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="b1 hideonmobile"><i class="fa-solid fa-phone"></i> +201099811245</button>
+                <button type="button" class="b2 hideonmobile">Book Appointment</button>
+            </div>
+        </nav>
+    </header>
+    <div class="heroSection">
+        <div class="leftHero">
+            <h1>Your Healthy Our <br><span>Priority</span></h1>
+            <p class="mainp">We provide best medical services for you and<br>your family with love and care</p>
+            <div class="buttons">
+                <button type="button" class="b2"> Book Appointment</button>
+                <button type="button" class="b1">Learn more</button>
+            </div>
+            <div class="cards">
+                <div class="info-cards">
+                    <div class="card-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="card_text">
+                        <h4>Qualified Doctors</h4>
+                        <p>Best & Certified</p>
+                    </div>
+                </div>
+                <div class="info-cards">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+                    <div class="card_text">
+                        <h4>Modern Equipment</h4>
+                        <p>Advanced Technology</p>
+                    </div>
+                </div>
+                <div class="info-cards">
+                    <div class="card-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="card_text">
+                        <h4>24/7 Support</h4>
+                        <p>Always Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="righthero">
+            <img src="medicare_design_assets/hero_doctor.png" class="hideonmobile" alt="">
+        </div>
+    </div>
+    <div class="services">
+        <div class="first-line">
+            <h2>Our Services</h2>
+            <button type="button" class="b1">View all services</button>
+        </div>
+        <div class="services-card">
+            <div class="Cardiology">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h4>Cardiology</h4>
+                <p>We provide the best caradiology services</p>
+            </div>
+            <div class="Dental-care">
+                <i class="fa-solid fa-tooth"></i>
+                <h4>Dental care</h4>
+                <p>We provide the best dental care services</p>
+            </div>
+            <div class="Neurology">
+                <i class="fa-solid fa-brain"></i>
+                <h4>Neurology</h4>
+                <p>We provide the best neurology services</p>
+            </div>
+            <div class="Dermatology">
+                <i class="fa-solid fa-hand-dots"></i>
+                <h4>Dermatology</h4>
+                <p>We provide the best dermatology services</p>
+            </div>
+            <div class="Pediatrics">
+                <i class="fa-solid fa-baby"></i>
+                <h4>Pediatrics</h4>
+                <p>We provide the best pediatrics services</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="Doctors">
+        <div class="first-line">
+            <h2>Our Doctors</h2>
+            <div class="filter-buttons">
+                <div class="filter-btn active" data-filter="all">All</div>
+                <div class="filter-btn" data-filter="cardiologist">Cardiologist</div>
+                <div class="filter-btn" data-filter="dentist">Dentist</div>
+                <div class="filter-btn" data-filter="neurologist">Neurologist</div>
+                <div class="filter-btn" data-filter="dermatologist">Dermatologist</div>
+            </div>
+            <button type="button" class="b1">View all Doctors</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item cardiologist">
+                <img src="medicare_design_assets/doctor1.PNG" alt="cardiologist Doctor1">
+                <h4>Dr.Michael Brown</h4>
+                <p>Cardiologist</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="gallery-item dentist">
+                <img src="medicare_design_assets/doctor2.PNG" alt="Dentist Doctor1">
+                <h4>Dr.Emily Carter</h4>
+                <p>Dentist</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="gallery-item neurologist">
+                <img src="medicare_design_assets/doctor4.PNG" alt="Neurologist Doctor1">
+                <h4>Dr.Devid Wilson</h4>
+                <p>Neurologist</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="gallery-item dermatologist">
+                <img src="medicare_design_assets/doctor3.PNG" alt="Dermatologist Doctor1">
+                <h4>Dr.Sarah Johnson</h4>
+                <p>Dermatologist</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="rating">
+        <div class="super">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="sub">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
+        </div>
+        <div class="super">
+            <i class="fa-solid fa-hospital-user"></i>
+            <div class="sub">
+                <h3>5000+</h3>
+                <p>Happy Patients</p>
+            </div>
+        </div>
+        <div class="super">
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="sub">
+                <h3>50+</h3>
+                <p>Expert Doctors</p>
+            </div>
+        </div>
+        <div class="super">
+            <i class="fa-solid fa-user-clock"></i>
+            <div class="sub">
+                <h3>24/7</h3>
+                <p>Emergency Support</p>
+            </div>
+        </div>
+    </div>
+    <div class="feedbackandbooking">
+        <div class="container swiper">
+            <div class="feedback">
+            <h2>What our patient say</h2>
+        </div>
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+
+                    <div class="card-item swiper-slide">
+                        <img src="medicare_design_assets/doctor1.PNG" alt="Sarah Williams">
+
+                        <div class="text">
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                MediCare is the best clinic! The doctors are very
+                                professional and friendly. I'm so happy with the
+                                service I received.
+                            </p>
+
+                            <h4>— Sarah Williams</h4>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="medicare_design_assets/doctor1.PNG" alt="John Smith">
+
+                        <div class="text">
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                The doctors were very professional and the service
+                                was excellent. Highly recommended!
+                            </p>
+
+                            <h4>— John Smith</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="formaction">
+            <div class="form">
+            <h2>Book an appointment</h2>
+        </div>
+            <form action="#">
+                <div class="rowinput">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="rowinput">
+                    <div class="input-box">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-box">
+                        <select name="doctors" id="doctors">
+                            <option value="selectdoctor">Select Doctor</option>
+                            <option value="John">John</option>
+                            <option value="Sarah">Sarah</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowinput">
+                    <div class="input-box">
+                        <input type="text" placeholder="Select Date" onfocus="this.type='date'" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Message">
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Book An Appointment">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footercol">
+                <img src="medicare_design_assets/ChatGPT_Image_Aug_25__2026__07_35_15_PM-removebg-preview_evoto_edited-removebg-preview.png"
+                    alt="Logo">
+                <p class="text">
+                    we are dedicated to providing the best healthcare services for you and your family
+                </p>
+                <div class="footericons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="footercol">
+                <h4>Quik Links</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Doctors</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footercol">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Cardiology</li>
+                    <li>Dental Care</li>
+                    <li>Neurology</li>
+                    <li>Dermatology</li>
+                    <li>Pediatrics</li>
+                </ul>
+            </div>
+
+            <div class="footercol">
+                <h4>Contact Us</h4>
+                <p>+20 123 456 7890</p>
+                <p>info@medicare.com</p>
+                <p>123 Health Street, Ciro, Egypt</p>
+
+            </div>
+            <div class="footercol">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our Newsletter for the latest updates</p>
+                <input type="text" placeholder="Your Email"><i class="fa-solid fa-arrow-right-long"></i>
+
+            </div>
+        </div>
+        <div class="breakline"></div>
+        <div class="final">
+            <p>&#169; 2024 MediCare Clinic. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
